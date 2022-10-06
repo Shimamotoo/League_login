@@ -1,0 +1,194 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #FFF;
+    --whitesmoke: #F9F9F9;
+    --light-grey: #ECECEC;
+    --grey: #C4C4C4;
+    --medium-grey: #A7A7A7;
+    --deep-grey: #343434;
+    --black: #000000;
+    --blue: #1B77F3;
+    --red: #CF3C3F;
+  }
+
+  main{
+    display: flex;
+  }
+
+.img_logo{
+    width: 50px;
+    height: 50px;
+}
+
+.login_title{
+    color: var(--deep-grey);
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 500px;
+    min-height: 100vh;
+    padding: 30px;
+  }
+
+.login_label{
+    width: 100%;
+}
+  
+.input{
+    width: 100%;
+    background-color: var(--light-grey);
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9em;
+    padding: 25px 10px 10px;
+    font-weight: 600;
+    color: var(--deep-grey);
+}
+
+.login_icons{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.apple_button{
+    width: 110px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+i.bxl-apple{
+    display: block;
+    font-size: 25px;
+    color: white;
+}
+
+.google_button{
+    width: 110px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+i.bxl-google{
+    display: block;
+    font-size: 25px;
+}
+
+.face_button{
+    width: 110px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #1B77F3;
+}
+
+i.bxl-facebook-circle{
+    display: block;
+    font-size: 25px; 
+    color: white;  
+}
+
+.login_label span{
+    position: absolute;
+    text-transform: uppercase;
+    color: var(--medium-grey);
+    margin: 20px;
+    cursor: text;
+    transition: all 200ms ease;
+}
+
+.input:focus{
+    background-color: var(--whitesmoke);
+    border: 2px solid var(--deep-grey);
+}
+
+.login__label .span-active{
+    font-size: 0.7em;
+    margin: 8px 10px;
+}
+
+.label_login_checkbox {
+    width: 100%;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.input_checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: var(--light-grey);
+    margin-right: 8px;
+    border-radius: 3px;
+  }
+  
+.input_checkbox:checked {
+    background-color: var(--red);
+  }
+  
+.input_checkbox:checked::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: 3px solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    margin: 2px 6px;
+}
+
+.login_button {
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--red);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 60px;
+  }
+
+i.bx-right-arrow-alt{
+    display: block;
+    font-size: 25px;
+    color: var(--light-grey);
+} 
+
+.login_button:disabled {
+    cursor: auto;
+    background-color: white;
+    border: 2px solid var(--light-grey);
+}
+
+.wallpaper{
+    width: 100%;
+    height: 700px;
+}
